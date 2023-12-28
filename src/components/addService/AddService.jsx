@@ -57,7 +57,6 @@ const AddService = observer(() => {
     return (
         <>
             <Button variant="contained" onClick={() => setIsOpen(true)}>הוסף שירות</Button>
-
             <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
                 <DialogTitle>  Set service</DialogTitle>
                 <DialogContent>
@@ -73,7 +72,6 @@ const AddService = observer(() => {
                             />
                         </div>
                         <div className="PopupsInput">
-
                             <TextField
                                 fullWidth
                                 label=" service Description"

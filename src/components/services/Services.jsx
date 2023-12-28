@@ -22,7 +22,7 @@ const Services=(observer(()=> {
 //  useEffect(()=>{
 //   Store.getService();
 //  },[])
-
+console.log('services')
     return (
       <>
       <AddService/>

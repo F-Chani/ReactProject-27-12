@@ -1,8 +1,14 @@
-// import{ observable, makeObservable,action} from 'mobx';
+//import{ makeObservable,action} from 'mobx';
 import AdminData from './AdminData'
 class Store{
 
- 
+//   constructor(){
+//     makeObservable(this,{              
+//      sendDetails:action,
+//      getDetalise:action,
+//      addService:action,
+//      getService:action,
+// })
     sendDetails=async(id,name,address,phone,owner,logo,description)=>{
         console.log("enter save saveDetalise ")
         console.log(id,name,address,phone,owner,logo,description)
@@ -53,13 +59,7 @@ class Store{
                 AdminData.services=([...x])
                 console.log(x)
                }  
-
-          // initialService = async () => {
-          //     const response = await fetch("http://localhost:8787/services");
-          //     const data = await response.json();
-          //     console.log(data);
-          //     this.businessServicesList = ([...data]);
-          //   }
-              }       
+              }  
+  ///////////////////meeting///////////////////////////         
 }
 export default new Store;
